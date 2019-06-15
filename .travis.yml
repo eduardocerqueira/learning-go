@@ -1,0 +1,13 @@
+language: go
+go:
+  - 1.12.x
+  - master
+install: true
+
+jobs:
+  include:
+    - stage: calculator
+      before_script: cd src/calculator
+      script:
+        - go build
+        - go test -v
