@@ -2,6 +2,11 @@ language: go
 go:
   - 1.12.x
   - master
+
+before_install:
+   - go get github.com/gorilla/mux
+   - go get github.com/stretchr/testify/assert
+   
 install: true
 
 jobs:
