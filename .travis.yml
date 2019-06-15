@@ -4,5 +4,9 @@ go:
   - master
 install: true
 script:
+  - cd src/api
+  - go build
+  - go test -v
+  - cd src/calculator
   - go build
   - go test -v
