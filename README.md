@@ -17,6 +17,10 @@ echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
 # verify
 [ecerquei@desktop bin]$ go version
 go version go1.12.6 linux/amd64
+
+# get dependency
+go get github.com/gorilla/mux
+go get github.com/stretchr/testify/assert
 ```
 
 Access official download page for latest release and more instructions if needed: https://golang.org/dl/

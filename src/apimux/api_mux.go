@@ -68,6 +68,8 @@ func createArticle(w http.ResponseWriter, r *http.Request) {
 	json.Unmarshal(reqBody, &article)
 	Articles = append(Articles, article)
 	json.NewEncoder(w).Encode(article)
+	w.WriteHeader(200)
+	w.Write([]byte("Article created"))
 }
 
 func deleteArticleById(w http.ResponseWriter, r *http.Request) {

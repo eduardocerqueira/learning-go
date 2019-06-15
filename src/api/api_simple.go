@@ -33,6 +33,22 @@ var Articles []Article
 func homePage(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("endpoint: homePage")
 	fmt.Fprintf(w, "Welcome to the HomePage!")
+	w.Header().Set("Content-Type", "application/json")
+}
+
+func getAllArticles(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("endpoint: getAllArticles")
+	w.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(w).Encode(generateArticles())
+}
+
+func generateArticles() []Article {
+	Articles := []Article{
+		Article{Title: "Hello 1", Desc: "Article Description", Content: "Article Content"},
+		Article{Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
+	}
+
+	return Articles
 }
 
 func handleRequests() {
@@ -43,18 +59,7 @@ func handleRequests() {
 	log.Fatal(http.ListenAndServe(":10000", nil))
 }
 
-func getAllArticles(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("endpoint: getAllArticles")
-	json.NewEncoder(w).Encode(Articles)
-}
-
 func main() {
 	log.Println("server is running at: http://localhost:10000/")
-
-	Articles = []Article{
-		Article{Title: "Hello 1", Desc: "Article Description", Content: "Article Content"},
-		Article{Title: "Hello 2", Desc: "Article Description", Content: "Article Content"},
-	}
-
 	handleRequests()
 }
