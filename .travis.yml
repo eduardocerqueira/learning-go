@@ -11,3 +11,9 @@ jobs:
       script:
         - go build
         - go test -v
+
+    - stage: api
+      before_script: cd src/api
+      script:
+        - go build
+        - go test -v
