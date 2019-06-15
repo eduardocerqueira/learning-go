@@ -3,10 +3,11 @@ go:
   - 1.12.x
   - master
 install: true
-script:
-  - cd src/api
-  - go build
-  - go test -v
-  - cd src/calculator
-  - go build
-  - go test -v
+
+jobs:
+  include:
+    - stage: calculator
+      before_script: cd src/calculator
+      script:
+        - go build
+        - go test -v
