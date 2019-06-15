@@ -28,3 +28,7 @@ func TestDivide(t *testing.T) {
 
 	assert.Equal(t, expected, res, "result no right")
 }
+
+func TestSubtract(t *testing.T) {
+	assert.Equal(t, 7, Subtract(11, 4), "result not right")
+}
