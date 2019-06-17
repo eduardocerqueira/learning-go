@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=master)](https://travis-ci.org/eduardocerqueira/learning-go)
+
 # Learning GoLang
 
 personal repo for learning and getting more familia with GoLang
