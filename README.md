@@ -62,13 +62,17 @@ curl http://localhost:10000/articles
 
 ***tutorial and blog***
 https://tutorialedge.net/golang/creating-restful-api-with-golang/
+
 https://blog.golang.org/go-slices-usage-and-internals
 
 **documentation**
 https://golang.org/
+
 https://github.com/gorilla/mux
 
 **Free e-books**
 https://golang.org/doc/effective_go.html
+
 http://www.golang-book.com/books/intro
+
 https://www.openmymind.net/The-Little-Go-Book/
