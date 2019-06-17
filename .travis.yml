@@ -2,12 +2,23 @@ language: go
 go:
   - 1.12.x
   - master
+
+before_install:
+   - go get github.com/gorilla/mux
+   - go get github.com/stretchr/testify/assert
+   
 install: true
 
 jobs:
   include:
     - stage: calculator
       before_script: cd src/calculator
+      script:
+        - go build
+        - go test -v
+
+    - stage: api
+      before_script: cd src/api
       script:
         - go build
         - go test -v
