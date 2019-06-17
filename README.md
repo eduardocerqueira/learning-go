@@ -1,5 +1,3 @@
-https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=master
-
 # Learning GoLang
 
 personal repo for learning and getting more familia with GoLang
