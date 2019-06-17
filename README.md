@@ -1,7 +1,7 @@
 |branch|build|test|
 |------|-----|----|
-|master|[![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=master)](https://travis-ci.org/eduardocerqueira/learning-go)|x|
-|dev|[![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=dev)](https://travis-ci.org/eduardocerqueira/learning-go)|x|
+|master|[![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=master)](https://travis-ci.org/eduardocerqueira/learning-go)|[![codecov](https://codecov.io/gh/eduardocerqueira/learning-go/branch/master/graph/badge.svg)](https://codecov.io/gh/eduardocerqueira/learning-go)|
+|dev|[![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=dev)](https://travis-ci.org/eduardocerqueira/learning-go)|[![codecov](https://codecov.io/gh/eduardocerqueira/learning-go/branch/master/graph/badge.svg)](https://codecov.io/gh/eduardocerqueira/learning-go)|
 
 # Learning GoLang
 
