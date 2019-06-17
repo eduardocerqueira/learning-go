@@ -6,7 +6,7 @@ go:
 before_install:
    - go get github.com/gorilla/mux
    - go get github.com/stretchr/testify/assert
-   
+
 install: true
 
 jobs:
@@ -15,10 +15,22 @@ jobs:
       before_script: cd src/calculator
       script:
         - go build
-        - go test -v
+        - go test -v -coverprofile=coverage.txt -covermode=atomic
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
 
     - stage: api
       before_script: cd src/api
       script:
         - go build
-        - go test -v
+        - go test -v -coverprofile=coverage.txt -covermode=atomic
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
+
+    - stage: apimux
+      before_script: cd src/apimux
+      script:
+        - go build
+        - go test -v -coverprofile=coverage.txt -covermode=atomic
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)        
