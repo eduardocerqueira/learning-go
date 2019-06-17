@@ -1,4 +1,7 @@
+Master: 
 [![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=master)](https://travis-ci.org/eduardocerqueira/learning-go)
+
+DEV: [![Build Status](https://travis-ci.org/eduardocerqueira/learning-go.svg?branch=dev)](https://travis-ci.org/eduardocerqueira/learning-go)
 
 # Learning GoLang
 
